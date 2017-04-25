@@ -40,7 +40,7 @@ public class AutoScaleQuad : MonoBehaviour {
 		m_rIos.gameObject.transform.localScale = Vector3.zero;
 #elif UNITY_IOS
 		m_rAndroid.gameObject.transform.localScale = Vector3.zero;
-		m_rIos.gameObject.transform.localScale = new Vector3(width, height,  1.0f);
+		m_rIos.gameObject.transform.localScale = new Vector3(height, width, 1.0f);
 #endif
 	}
 }

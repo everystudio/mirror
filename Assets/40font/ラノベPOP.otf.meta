@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f251361a679015e4ba00579bc7a9055b
+guid: 491ee623e5b35ca499424ebe550149de
 timeCreated: 1493084312
 licenseType: Free
 TrueTypeFontImporter:
@@ -12,7 +12,8 @@ TrueTypeFontImporter:
   fontName: 07LightNovelPOP
   fontNames:
   - 07LightNovelPOP
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f251361a679015e4ba00579bc7a9055b, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
