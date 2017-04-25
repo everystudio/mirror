@@ -1,0 +1,60 @@
+{"frames": {
+
+"clock_1200.png":
+{
+	"frame": {"x":1,"y":658,"w":482,"h":482},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":482,"h":482},
+	"sourceSize": {"w":486,"h":486}
+},
+"kaden_camera_ichigan.png":
+{
+	"frame": {"x":1,"y":268,"w":493,"h":388},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":13,"w":493,"h":388},
+	"sourceSize": {"w":531,"h":419}
+},
+"mark_arrow_reload.png":
+{
+	"frame": {"x":1585,"y":1,"w":219,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":30,"w":219,"h":204},
+	"sourceSize": {"w":254,"h":258}
+},
+"mark_question.png":
+{
+	"frame": {"x":1806,"y":1,"w":182,"h":281},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":15,"w":182,"h":281},
+	"sourceSize": {"w":248,"h":316}
+},
+"sotsugyou_album_blank.png":
+{
+	"frame": {"x":802,"y":1,"w":781,"h":497},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":3,"w":781,"h":497},
+	"sourceSize": {"w":800,"h":509}
+},
+"sozai_image_35292.png":
+{
+	"frame": {"x":1,"y":1,"w":799,"h":265},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":799,"h":265},
+	"sourceSize": {"w":799,"h":266}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_mirror.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:bd698a71c3da91eb8d3d38f7d825384f:e408b8e6f29a4864a212f75f5e6f8624:d7d41b78e39f902d44035b5531e1ca9b$"
+}
+}
