@@ -113,11 +113,19 @@ public class WebCameraController : MonoBehaviour {
 
 	public void OnSwitchSide()
 	{
+#if UNITY_ANDROID
 		m_renderer.transform.localScale = new Vector3(
 			m_renderer.transform.localScale.x,
 			m_renderer.transform.localScale.y * -1,
 			m_renderer.transform.localScale.z
 			);
+#elif UNITY_IOS
+		m_renderer.transform.localScale = new Vector3(
+			m_renderer.transform.localScale.x * -1,
+			m_renderer.transform.localScale.y,
+			m_renderer.transform.localScale.z
+			);
+#endif
 	}
 
 
