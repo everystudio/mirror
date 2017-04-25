@@ -25,7 +25,8 @@ public class UISelfTimer : CPanel {
 		{
 			m_fTimer = 0.0f;
 			UIAssistant.main.ShowPage("mirror");
-			m_wcc.OnSave();
+			//m_wcc.OnSave();
+			m_wcc.OnAction();
 		}
 		int iDispTime = 1+(int)m_fTimer;
 		if( 3 < iDispTime)

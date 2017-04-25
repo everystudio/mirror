@@ -20,7 +20,10 @@ public class WebCameraController : MonoBehaviour {
 	public STATUS m_eStatus;
 	public STATUS m_eStatusPre;
 
+
 	[SerializeField]
+	private AutoScaleQuad m_quad;
+
 	private Renderer m_renderer;
 
 	public WebCamDevice webcamDevice;
@@ -37,6 +40,8 @@ public class WebCameraController : MonoBehaviour {
 		m_eStatus = STATUS.PLAYING;
 		m_eStatusPre = STATUS.MAX;
 
+		m_renderer = m_quad.useRenderer;
+
 		WebCamDevice[] devices = WebCamTexture.devices;
 		// display all cameras
 		for (var i = 0; i < devices.Length; i++)
@@ -49,11 +54,13 @@ public class WebCameraController : MonoBehaviour {
 		Debug.Log(string.Format("width:{0}", Screen.width));
 
 		//m_renderer.gameObject.transform.localScale = new Vector3((float)Screen.height * 0.005f, (float)Screen.width * 0.005f, 1.0f);
-
 		Width = Screen.width;
 		Height = Screen.height;
-
-		webcamTexture = new WebCamTexture(webcamDevice.name, Width, Height, FPS);
+#if UNITY_ANDROID
+		webcamTexture = new WebCamTexture(webcamDevice.name, Height, Width, FPS);
+#elif UNITY_IOS
+		webcamTexture = new WebCamTexture(webcamDevice.name, Width,Height,  FPS);
+#endif
 		//GetComponent<Renderer>().material.mainTexture = webcamTexture;
 		m_renderer.material.mainTexture = webcamTexture;
 		webcamTexture.Play();
@@ -104,6 +111,14 @@ public class WebCameraController : MonoBehaviour {
 
 	}
 
+	public void OnSwitchSide()
+	{
+		m_renderer.transform.localScale = new Vector3(
+			m_renderer.transform.localScale.x,
+			m_renderer.transform.localScale.y * -1,
+			m_renderer.transform.localScale.z
+			);
+	}
 
 
 
