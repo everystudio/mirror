@@ -59,7 +59,7 @@ public class WebCameraController : MonoBehaviour {
 #if UNITY_ANDROID
 		webcamTexture = new WebCamTexture(webcamDevice.name, Height, Width, FPS);
 #elif UNITY_IOS
-		webcamTexture = new WebCamTexture(webcamDevice.name, Width,Height,  FPS);
+		webcamTexture = new WebCamTexture(webcamDevice.name, Height,Width,  FPS);
 #endif
 		//GetComponent<Renderer>().material.mainTexture = webcamTexture;
 		m_renderer.material.mainTexture = webcamTexture;
